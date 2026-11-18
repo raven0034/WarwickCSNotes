@@ -1,7 +1,7 @@
 services:
-  csnotes:
+  csnotes2:
     image: ghcr.io/raven0034/warwickcsnotes:latest
-    container_name: warwickcsnotes
+    container_name: warwickcsnotes2
     environment:
       - VIRTUAL_HOST=csnotes2
       - GEMINI_KEY=${GEMINI_KEY}
