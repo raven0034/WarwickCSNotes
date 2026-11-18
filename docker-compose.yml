@@ -1,11 +1,11 @@
 services:
   csnotes:
-    image: ghcr.io/warwickcsnotes/warwickcsnotes:latest
+    image: ghcr.io/raven0034/warwickcsnotes:latest
     container_name: warwickcsnotes
     environment:
-      - VIRTUAL_HOST=csnotes
+      - VIRTUAL_HOST=csnotes2
       - GEMINI_KEY=${GEMINI_KEY}
       - CLAUDE_API=${CLAUDE_API}
     ports:
-      - "5422:3000"
+      - "5423:3000"
     restart: unless-stopped
